@@ -3,8 +3,13 @@
 // 10%.
 
 const iva = 0.10; //10%
+let price;
 
-let price = parseFloat(prompt("Ingrese el precio de un producto: "));
+do {
+    price = prompt("Ingrese el precio de un producto: ");
+} while (isNaN(price))
+
+price = parseFloat(price);
 
 let finalPrice = price + (price * iva);
 

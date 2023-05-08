@@ -4,10 +4,14 @@
 let num1 = 5;
 let num2 = 6;
 
-if (num1 > num2) {
-    console.log(num1 + " es el numero mayor")
-}else if (num1 < num2){
-    console.log(num2 + " es el numero mayor")
-}else{
-    console.log("Los numeros son iguales")
+if (!isNaN(num1) && !isNaN(num2)) {
+    if (num1 > num2) {
+        console.log(num1 + " es el numero mayor")
+    } else if (num1 < num2) {
+        console.log(num2 + " es el numero mayor")
+    } else {
+        console.log("Los numeros son iguales")
+    }
+} else {
+    console.log("Ambos valores deben ser numericos")
 }
