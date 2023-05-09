@@ -22,3 +22,4 @@ for (let i = 0; i < 9; i++) {
 console.log("Array de 10 numeros enteros del -5 al 5");
 console.log(numbers)
 console.log("El mayor es: ", getMax(numbers))
+console.log("El mayor es: ", Math.max(...numbers))
