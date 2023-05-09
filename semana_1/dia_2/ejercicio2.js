@@ -12,7 +12,7 @@ let missingNumbers = []
 let maxOccurrenceCount = 0
 
 // Get the numbers
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 100; i++) {
     numbers.push(randomInRange(-30, 30))
 }
 
@@ -20,6 +20,7 @@ for (let i = 0; i < 20; i++) {
 let getOccurrence = (arr, value) => {
     let count = 0
     arr.forEach(item => { if (item === value) count++ }) 
+    return count
 }
 
 for (let i = -30; i <= 30; i++) { //Recorrer el rango de numeros
@@ -30,9 +31,6 @@ for (let i = -30; i <= 30; i++) { //Recorrer el rango de numeros
     } else if (actualCount > maxOccurrenceCount) {
         maxOccurrenceCount = actualCount
         maxOccurrenceNumber = i
-    }
-    if (i == 30) {
-        console.log(maxOccurrenceCount);
     }
 }
 
